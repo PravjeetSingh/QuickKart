@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bdb2b2;
+}
+
+#section-1 {
+    width: 100%;
+    background-color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #ffffff;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #4CAF50;
+}
+
+.searchbar {
+    background-color: rgb(196, 195, 194);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px 0 0 5px;
+
+}
+
+.search-input {
+    background-color: rgb(196, 195, 194);
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+    width: 250px;
+}
+
+.search-button {
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn, .signup-btn {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.login-btn {
+    background-color: #555;
+    color: white;
+}
+
+.signup-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.signup-btn:hover, .login-btn:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .searchbar {
+        width: 100%;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+}
